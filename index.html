@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>page</title>
+    <link rel="stylesheet" href="onepage-scroll.css">
+    <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body ng-app='app'>
+    <div class="main">
+        <section class='page1' ng-controller="appCtrl">
+            <div class="banner">
+                <h1 class="logo">深圳三和得民贸易有限公司</h1>
+                <nav class='nav'>
+                    <ul class="navWrap">
+                        <li class="navItem" ng-class="{curLi : vm.curLi==1}" ng-click="vm.curLi=1">平台介绍</li>
+                        <li class="navItem" ng-class="{curLi : vm.curLi==2}" ng-click="vm.curLi=2">APP下载</li>
+                        <li class="navItem" ng-class="{curLi : vm.curLi==3}" ng-click="vm.curLi=3">关于我们</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="appInfo" ng-if="vm.curLi==1">
+                <img src="images/11.jpg">
+            </div>
+            <div class="app clearFix" ng-show="vm.curLi==2">
+                <div class="left">
+                    <h1>少花钱，喝好酒</h1>
+                    <p>给懂酒的人找好酒，为好酒找懂酒的人！会聚五粮液、茅台等国内众多名酒，借助线下得民智能售酒机，为您带来全新的饮酒消费体验。</p>
+                    <ul class="list">
+                        <li>1. 名酒荟萃，平民消费</li>
+                        <li>2. 随时随地手机购名酒，不用再自带酒水</li>
+                        <li>3. 喝多少，取多少，不浪费不贪杯</li>
+                        <li>4. 聚餐喝酒，想喝什么，就取什么，各取所需</li>
+                        <li>5. 附近售酒机，购酒取酒更方便</li>
+                    </ul>
+                    <div class="appPic">
+                        <img src="images/app.gif">
+                    </div>
+                    <div class="downLoad" ng-show="false">
+                        <div class="apple"><img src="images/apple.gif">IOS</div>
+                        <div class="an"><img src="images/an.gif">Android</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="images/p_sj.jpg">
+                </div>
+            </div>
+            <div class="info" ng-if="vm.curLi==3">
+                <p class="txt">公司简介：联合深创投、IBM、一线酒企、全国中高端餐饮店，以原窑原酿白酒为售卖主体，通过“智能售酒终端+移动终端（APP）”双终端线上线下运营方式，构建白酒行业智能售酒双向O2O模式；以“白酒售价统一、分润比例统一、终端价格统一”营销政策，通过“直营+加盟”市场策略，带给消费者全新的“安全、便捷、有趣、实惠”的白酒消费体验，推进中国传统白酒消费方式和销售模式的变革与创新,引领行业健康发展，把放心酒直供千家万户。我们坚持以客户为本，诚信为根，打造为中国优秀的白酒渠道平台和最强的渠道品牌。</p>
+                <div class="contact">
+                    <p>电话：13902642895/0755-29418811 客服QQ：3311637259</p>
+                    <p>地址：深圳市龙华新区大浪街道浪宁路石凹商铺24-25号</p>
+                </div>
+                <img src="images/b.jpg">
+            </div>
+        </section>
+        <section class='page2'>
+            <img src="images/c.jpg">
+        </section>
+        <section class='page3'>
+            <h1>合作酒企</h1>
+            <div class="ck-slide">
+                <ul class="ck-slide-wrapper">
+                    <li>
+                        <a href="#"><img src="images/1.jpg" alt=""></a>
+                    </li>
+                    <li style="display:none">
+                        <a href="#"><img src="images/2.jpg" alt=""></a>
+                    </li>
+                    <li style="display:none">
+                        <a href="#"><img src="images/3.jpg" alt=""></a>
+                    </li>
+                    <li style="display:none">
+                        <a href="#"><img src="images/4.jpg" alt=""></a>
+                    </li>
+                    <li style="display:none">
+                        <a href="#"><img src="images/5.jpg" alt=""></a>
+                    </li>
+                    <li style="display:none">
+                        <a href="#"><img src="images/6.jpg" alt=""></a>
+                    </li>
+                    <li style="display:none">
+                        <a href="#"><img src="images/7.jpg" alt=""></a>
+                    </li>
+                </ul>
+                <a href="javascript:" class="ctrl-slide ck-prev">上一张</a>
+                <a href="javascript:" class="ctrl-slide ck-next">下一张</a>
+                <div class="ck-slidebox">
+                    <div class="slideWrap">
+                        <ul class="dot-wrap">
+                            <li class="current"><em>1</em></li>
+                            <li><em>2</em></li>
+                            <li><em>3</em></li>
+                            <li><em>4</em></li>
+                            <li><em>5</em></li>
+                            <li><em>6</em></li>
+                            <li><em>7</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <p>电话：13902642895/0755-29418811 客服QQ：3311637259</p>
+                <p>地址：深圳市龙华新区大浪街道浪宁路石凹商铺24-25号</p>
+            </div>
+        </section>
+    </div>
+    <script src='http://apps.bdimg.com/libs/angular.js/1.4.0-beta.4/angular.min.js'></script>
+    <script src='jquery-1.9.0.min.js'></script>
+    <script src='jquery.onepage-scroll.js'></script>
+    <script src="slide.js"></script>
+    <script src="main.js"></script>
+    <script>
+    $(function() {
+        $('.main').onepage_scroll();
+    });
+    </script>
+    <script>
+    $('.ck-slide').ckSlide({
+        autoPlay: true
+    });
+    </script>
+</body>
+
+</html>

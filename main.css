@@ -1,0 +1,130 @@
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-block;
+}
+.main .page1 .banner {
+  width: 100%;
+  height: 80px;
+  background: #0082f1;
+}
+.main .page1 .banner .logo {
+  display: inline-block;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 20px;
+  color: #fff;
+}
+.main .page1 .banner .nav {
+  width: 300px;
+  height: 80px;
+  float: right;
+}
+.main .page1 .banner .nav .navWrap {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main .page1 .banner .nav .navWrap .navItem {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  cursor: pointer;
+  color: #82c8fa;
+}
+.main .page1 .banner .nav .navWrap .curLi {
+  color: #fff;
+}
+.main .page1 .appInfo {
+  height: 100%;
+  width: 100%;
+}
+.main .page1 .appInfo img {
+  width: 80%;
+  height: 60%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  top: 50%;
+}
+.main .page1 .app {
+  height: 90%;
+}
+.main .page1 .app .left {
+  width: 50%;
+  margin-left: 100px;
+  display: inline-block;
+}
+.main .page1 .app .left .list {
+  list-style: none;
+  color: #aaa;
+  padding-left: 0;
+}
+.main .page1 .app .right {
+  float: right;
+  margin-right: 70px;
+  height: 100%;
+}
+.main .page1 .app .right img {
+  height: 100%;
+  width: 100%;
+}
+.main .page1 .info .txt {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  left: 50px;
+  top: 150px;
+  color: #222;
+}
+.main .page1 .info .contact {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  color: #777;
+}
+.main .page1 .info img {
+  width: 100%;
+}
+.main .page2 {
+  overflow: hidden;
+}
+.main .page2 img {
+  width: 100%;
+  position: absolute;
+  top: -100px;
+}
+.main .page3 h1 {
+  text-align: center;
+}
+.main .page3 .ck-slide {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  top: 50%;
+  margin-top: -300px;
+}
+.main .page3 .ck-slide .ck-slide-wrapper img {
+  width: 600px;
+  height: 400px;
+}
+.main .page3 .contact {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .page4 {
+  background: #ccc;
+  opacity: 0.4;
+}
+/*# sourceMappingURL=main.css.map */
